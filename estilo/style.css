@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Boot CSS */
+.center {
+  max-width: 1000px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+.w33 {
+  width: 33%;
+  padding: 0 10px;
+  margin: auto;
+}
+.w50 {
+  width: 50%;
+  padding: 0 2%;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+/* estilização do site */
+
+header {
+  background: #3d437a;
+  padding: 20px 0;
+}
+header .logo {
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+}
+.mobile {
+  display: none;
+}
+nav.desktop ul {
+  list-style-type: nome;
+  position: relative;
+  top: 8px;
+}
+nav.desktop li {
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 0 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+}
+nav.desktop a {
+  text-decoration: none;
+}
+nav.desktop li:hover {
+  text-decoration: underline;
+}
+section.banner-principal {
+  width: 100%;
+  height: 896px;
+  background-size: cover;
+  background-image: url("../images/trabalho.jpg");
+}
+img.foto-perfil {
+  width: 98%;
+  height: 50%;
+  max-width: 342px;
+}
+.overlay {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.6);
+}
+section.banner-principal form {
+  width: 98%;
+  max-width: 500px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+}
+section.banner-principal form h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+section.banner-principal form input[type="email"] {
+  width: 100%;
+  height: 66px;
+  margin-top: 10px;
+  background: white;
+  color: #333;
+  font-size: 22px;
+  padding-left: 10px;
+}
+section.banner-principal form input[type="submit"] {
+  width: 100%;
+  height: 66px;
+  margin-top: 10px;
+  background: #00c59e;
+  color: white;
+  font-size: 22px;
+  border: 0;
+}
+section.descricao-autor {
+  padding: 50px 0;
+}
+section.descricao-autor h2 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #444;
+}
+section.descricao-autor p {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 300;
+  margin-top: 10px;
+}
+section.especialidades {
+  padding: 40px 0;
+  background: #e2e2e2;
+  font-size: 1rem;
+}
+section.especialidades h2.title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #999;
+  text-align: center;
+}
+.box-especialidade {
+  margin: 20px 0;
+  padding: 0 30px;
+  text-align: center;
+}
+.box-especialidade h3 {
+  color: #404580;
+  font-size: 40px;
+}
+.box-especialidade h4 {
+  font-weight: 300;
+  color: #bababa;
+  font-size: 25px;
+}
+.box-especialidade p {
+  color: #444;
+  font-size: 15px;
+  margin-top: 10px;
+}
+section.extras {
+  padding: 30px 0;
+  background: #404580;
+}
+.servicos-container,
+.depoimentos-container {
+  padding: 0 50px;
+}
+section.extras h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.depoimento-single {
+  padding: 15px;
+  border-bottom: 1px solid #5056a0;
+}
+p.depoimento-descricao {
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
+}
+p.nome-autor {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+}
+div.servicos ul {
+  margin: 20px 0;
+  list-style-position: inside;
+}
+div.servicos li {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
+}
+footer {
+  background: #313462;
+  padding: 30px 0;
+}
+footer p {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  img {
+    float: none !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .w50 {
+    padding: 20px;
+    width: 100%;
+  }
+  .w33 {
+    width: 100%;
+    padding: 20px;
+  }
+  .box-especialidade {
+    margin: 0;
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  nav.desktop {
+    display: none;
+  }
+  nav.mobile {
+    display: block;
+  }
+  .botao-menu-mobile {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  nav.mobile ul {
+    top: 55px;
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: none;
+    text-align: center;
+  }
+  nav.mobile li {
+    font-weight: 300;
+    width: 100%;
+    display: block;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    font-size: 17px;
+    padding: 8px 0;
+  }
+  nav.mobile li a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+  }
+}
